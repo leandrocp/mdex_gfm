@@ -27,9 +27,6 @@ defmodule MDExGFM do
       github_pre_lang: true,
       full_info_string: true,
       unsafe: true
-    ],
-    syntax_highlight: [
-      formatter: {:html_inline, theme: "github_light"}
     ]
   ]
 
@@ -52,6 +49,5 @@ defmodule MDExGFM do
     |> Pipe.put_extension_options(@options[:extension])
     |> Pipe.put_parse_options(@options[:parse])
     |> Pipe.put_render_options(@options[:render])
-    |> Pipe.put_syntax_highlight_options(@options[:syntax_highlight])
   end
 end
