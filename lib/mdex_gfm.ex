@@ -6,7 +6,7 @@ defmodule MDExGFM do
              |> String.split("<!-- MDOC -->")
              |> Enum.fetch!(1)
 
-  alias MDEx.Pipe
+  alias MDEx.Document
 
   @options [
     extension: [
@@ -31,7 +31,7 @@ defmodule MDExGFM do
   ]
 
   @doc """
-  Attaches the MDExGFM plugin into the MDEx pipeline.
+  Attaches the MDExGFM plugin into the MDEx document.
 
   **Note** it does not change the syntax highlighting options to use any GitHub theme automatically,
   but you can set it manually in the `syntax_highlight` options, for example:
@@ -43,11 +43,11 @@ defmodule MDExGFM do
         )
 
   """
-  @spec attach(Pipe.t(), keyword()) :: Pipe.t()
-  def attach(pipe, _options \\ []) do
-    pipe
-    |> Pipe.put_extension_options(@options[:extension])
-    |> Pipe.put_parse_options(@options[:parse])
-    |> Pipe.put_render_options(@options[:render])
+  @spec attach(Document.t(), keyword()) :: Document.t()
+  def attach(document, _options \\ []) do
+    document
+    |> Document.put_extension_options(@options[:extension])
+    |> Document.put_parse_options(@options[:parse])
+    |> Document.put_render_options(@options[:render])
   end
 end
