@@ -24,9 +24,9 @@ markdown = """
 - [ ] Write your markdown
 """
 
-mdex = MDEx.new() |> MDExGFM.attach()
+mdex = MDEx.new(markdown: markdown) |> MDExGFM.attach()
 
-MDEx.to_html!(mdex, document: markdown) |> IO.puts()
+MDEx.to_html!(mdex) |> IO.puts()
 """
 <h1>GFM</h1>
 <div class="markdown-alert markdown-alert-note">
