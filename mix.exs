@@ -43,12 +43,13 @@ defmodule MDExGFM.MixProject do
         Changelog: "https://hexdocs.pm/mdex_gfm/changelog.html",
         GitHub: @source_url
       },
-      files: [
-        "mix.exs",
-        "lib",
-        "README.md",
-        "LICENSE",
-        "CHANGELOG.md"
+      files: ~w[
+        mix.exs
+        lib
+        README.md
+        LICENSE
+        CHANGELOG.md
+        usage-rules.md
       ]
     ]
   end
