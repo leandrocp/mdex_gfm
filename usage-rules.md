@@ -1,6 +1,6 @@
 # MDExGFM Usage Rules
 
-MDExGFM is an Elixir plugin for [MDEx](https://mdelixir.dev) that enables [GitHub Flavored Markdown](https://github.github.com/gfm) support.
+MDExGFM is an Elixir plugin for [MDEx](https://hex.pm/packages/mdex) that enables [GitHub Flavored Markdown](https://github.github.com/gfm) support.
 
 ## What is MDExGFM?
 
