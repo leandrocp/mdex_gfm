@@ -1,6 +1,9 @@
 # Changelog
 
-## Unreleased
+## 0.1.5 - 2026-01-09
+
+### Changed
+- Depend on MDEx >= 0.9.0
 
 ## 0.1.4 - 2025-10-09
 
