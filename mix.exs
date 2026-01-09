@@ -2,7 +2,7 @@ defmodule MDExGFM.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/leandrocp/mdex_gfm"
-  @version "0.1.4"
+  @version "0.1.5-dev"
 
   def project do
     [
@@ -78,7 +78,7 @@ defmodule MDExGFM.MixProject do
     if path = System.get_env("MDEX_PATH") do
       {:mdex, path: path}
     else
-      {:mdex, "~> 0.9"}
+      {:mdex, ">= 0.9.0"}
     end
   end
 
