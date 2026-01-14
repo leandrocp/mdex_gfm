@@ -16,7 +16,6 @@ defmodule MDExGFM do
       shortcodes: true,
       strikethrough: true,
       table: true,
-      tagfilter: true,
       tasklist: true
     ],
     parse: [
