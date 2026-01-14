@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0 - 2026-01-13
+
+### Changed
+- **Minor breaking change**: Do not enable `tagfilter` anymore to avoid breaking other plugins that inject `<script>` tags.
+
 ## 0.1.5 - 2026-01-09
 
 ### Changed

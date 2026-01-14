@@ -2,7 +2,7 @@ defmodule MDExGFM.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/leandrocp/mdex_gfm"
-  @version "0.1.5"
+  @version "0.2.0"
 
   def project do
     [
