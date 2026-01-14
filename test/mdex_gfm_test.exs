@@ -40,7 +40,6 @@ defmodule MDExGFMTest do
              :shortcodes,
              :strikethrough,
              :table,
-             :tagfilter,
              :tasklist
            ]) ==
              [
@@ -50,7 +49,6 @@ defmodule MDExGFMTest do
                shortcodes: true,
                strikethrough: true,
                table: true,
-               tagfilter: true,
                tasklist: true
              ]
   end
