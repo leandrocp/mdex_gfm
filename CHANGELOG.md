@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0 - 2026-01-13
+## [0.2.0](https://github.com/leandrocp/mdex_gfm/compare/v0.1.5...v0.2.0) (2026-01-13)
 
 ### Changed
 - **Minor breaking change**: Do not enable `tagfilter` anymore to avoid breaking other plugins that inject `<script>` tags.
