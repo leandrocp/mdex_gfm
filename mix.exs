@@ -67,6 +67,7 @@ defmodule MDExGFM.MixProject do
   defp deps do
     [
       mdex_dep(),
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:ex_doc, ">= 0.0.0", only: :docs},
       {:makeup_elixir, "~> 1.0", only: :docs},
       {:makeup_eex, "~> 2.0", only: :docs},
